@@ -1,3 +1,19 @@
+New Method:
+
+ext install rheller.alive
+
+
+Install QuickLisp, then run these on a repl 
+
+    (ql:quickload "bordeaux-threads")
+    (ql:quickload "usocket")
+    (ql:quickload "cl-json")
+    (ql:quickload "flexi-streams")
+
+
+Old Method:
+
+
 1) Install Roswell
 2) Downgrade sbcl:
 
