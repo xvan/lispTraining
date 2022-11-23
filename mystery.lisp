@@ -6,9 +6,6 @@
          (int-to-binary-list (ash n -1) (cons (logand 1 n) acc)))
         (t (error "~S: non-negative argument required, got ~s" 'int-to-binary-list n))))
 
-
-(int-to-binary-list 3)
-
 (defun binary-list-to-int (x)
         (reduce (lambda (a b) (+ (* 2 a) b)) x))
 
@@ -35,5 +32,8 @@
 (defun mystery-inv (n)
     (binary-list-to-int (inv-gray n))
     )
+
+(mystery 5)
+(mystery-inv (mystery 5))
 
 ;(defun mystery-name ())
